@@ -60,7 +60,7 @@ async function searchImages() {
     const results = data.results;
 
     results.forEach(function(result) {
-        if (displayedImages < 15) { // Check if the limit is reached
+        if (displayedImages < 9) { // Check if the limit is reached
             const image = document.createElement("img");
             image.src = result.urls.small;
             const imageLink = document.createElement("a");
